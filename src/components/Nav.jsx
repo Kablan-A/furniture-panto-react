@@ -6,7 +6,7 @@ function Nav() {
   return (
     <nav className="navbar navbar-expand-lg bg-transparent">
       <div className="container-fluid p-0">
-        <a href="#" className="navbar-brand me-auto">
+        <a href="/" className="navbar-brand me-auto">
           Panto
         </a>
 
@@ -30,7 +30,7 @@ function Nav() {
             <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"
-                href="#"
+                href="/"
                 id="navbarDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -40,30 +40,30 @@ function Nav() {
                 Furniture
               </a>
               <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="/">
                   Something
                 </a>
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="/">
                   Something
                 </a>
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="/">
                   Something else here
                 </a>
               </div>
             </li>
 
             <li className="nav-item">
-              <a href="#" className="nav-link">
+              <a href="/" className="nav-link">
                 Shop
               </a>
             </li>
             <li className="nav-item">
-              <a href="#" className="nav-link">
+              <a href="/" className="nav-link">
                 About Us
               </a>
             </li>
             <li className="nav-item">
-              <a href="#" className="nav-link">
+              <a href="/" className="nav-link">
                 Contact
               </a>
             </li>
@@ -71,7 +71,7 @@ function Nav() {
         </div>
 
         <a
-          href="#"
+          href="/"
           className="nav-link p-0 d-none d-lg-block nav-icon-font-size"
         >
           <FontAwesomeIcon icon={faShoppingBag} />
