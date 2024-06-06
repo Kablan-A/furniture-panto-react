@@ -1,0 +1,48 @@
+.carousel-indicators-custom {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem;
+
+  background-color: #eee;
+}
+
+.carousel-indicator-custom {
+  color: var(--color-primary);
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+.carousel-indicator-custom.active,
+.carousel-indicator-custom:hover {
+  background-color: #fff;
+}
+
+.carousel-control-prev {
+  left: -1rem;
+}
+
+.carousel-control-next {
+  right: -1rem;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 3.125rem;
+  height: 3.125rem;
+
+  top: 50%;
+  transform: translateY(-50%);
+
+  box-shadow: var(--box-shadow-primary);
+
+  background-color: #fff;
+  border-radius: 50%;
+
+  transition: all 0.3s;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  color: #000;
+  font-size: 1.5rem;
+}

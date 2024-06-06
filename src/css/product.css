@@ -1,0 +1,38 @@
+.card {
+  border-radius: 1rem;
+}
+
+.card-img-product {
+  height: 40vmax;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .card-img-product {
+    height: 30vmax;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .card-img-product {
+    height: 23vmax;
+  }
+}
+
+.ratings {
+  color: var(--color-gold);
+  font-size: 1rem;
+}
+/* 
+.btn-product:link,
+.btn-product:visited {
+  width: 4.8rem;
+  height: 4.8rem;
+
+  background-color: var(--color-blue);
+
+  border-radius: 50%;
+
+  transform: scale(1);
+} */

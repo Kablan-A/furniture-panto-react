@@ -1,13 +1,129 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --color-primary: #1e1e1e;
+  --color-secondary: #e58411;
+
+  --color-blue: #0d1b39;
+
+  --color-gold: #f6b76f;
+
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+  --color-grey-light-5: #f7f7f7;
+  --color-grey-light-6: #fafafa;
+
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+  --color-grey-dark-4: #8d8d8d;
+
+  --font-size-nav-icon: 1.5rem;
+
+  --padding-x-sm: 1.5rem;
+  --padding-y-sm: 1.5rem;
+
+  --padding-x-lg: 3rem;
+  --padding-y-lg: 3rem;
+
+  --padding-nav-sm: var(--padding-y-sm) var(--padding-x-sm);
+  --padding-nav-lg: var(--padding-y-sm) var(--padding-x-lg);
+
+  --padding-section-sm: var(--padding-y-lg) var(--padding-x-sm);
+  --padding-section-lg: var(--padding-y-lg) var(--padding-x-lg);
+
+  --box-shadow-primary: rgba(0, 0, 0, 0.09) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.text-primary {
+  color: var(--color-primary) !important;
+}
+.text-secondary {
+  color: var(--color-secondary) !important;
+}
+.text-grey {
+  color: var(--color-grey-dark-4) !important;
+}
+.text-blue {
+  color: var(--color-blue) !important;
+}
+
+.letter-spacing-wide {
+  letter-spacing: 0.25rem !important;
+}
+
+.bg-grey-primary {
+  background-color: var(--color-grey-light-5) !important;
+}
+.bg-grey-secondary {
+  background-color: var(--color-grey-light-6) !important;
+}
+.bg-blue {
+  background-color: var(--color-blue) !important;
+}
+
+.shadow-primary {
+  box-shadow: var(--box-shadow-primary);
+}
+
+.rounded-photo {
+  border-radius: 1.5rem / 1.5rem !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  /* for width and height so padding and border do not add up to it */
+  box-sizing: inherit;
+}
+
+html {
+  /* specified for rem */
+  /* instead of using pixels - use % */
+  /* so it would depend on the user setting */
+  /* 62.5% = 10px, based on default 16px value */
+  /* using 10px is easier than 16 */
+  /* font-size: 62.5%; */
+}
+
+body {
+  /* it's better to put it here and not in * selector */
+  /* but make it inhereted in * selector */
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+}
+
+.absolute-center {
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-primary:link,
+.btn-primary:visited {
+  color: var(--color-secondary);
+
+  padding: 0;
+
+  border: none;
+  background-color: transparent;
+}
+
+.btn-primary span {
+  margin-left: 3px;
+
+  transition: margin 0.3s;
+}
+
+.btn-primary:hover span {
+  margin-left: 8px;
 }
