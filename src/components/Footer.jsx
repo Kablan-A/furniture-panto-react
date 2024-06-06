@@ -5,9 +5,9 @@ import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
   return (
-    <div className="container">
-      <footer className="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-        <div className="col col-md-4 mb-3 me-auto">
+    <div className="p-footer">
+      <footer className="row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-5 my-5 border-top">
+        <div className="col col-md-4 mb-5 me-auto">
           <a
             href="/"
             className="mb-3 text-decoration-none text-primary fw-bold fs-3"

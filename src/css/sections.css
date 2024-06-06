@@ -1,12 +1,14 @@
 .section-reasons,
 .section-products,
-.section-reviews {
+.section-reviews,
+.p-footer {
   padding: var(--padding-section-sm);
 }
 @media (min-width: 992px) {
   .section-reasons,
   .section-products,
-  .section-reviews {
+  .section-reviews,
+  .p-footer {
     padding: var(--padding-section-lg);
   }
 }
@@ -61,6 +63,7 @@
 }
 
 .section-materials__photo-box {
+  width: fit-content;
   display: flex;
   align-self: flex-end;
 }
