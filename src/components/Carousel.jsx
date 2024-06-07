@@ -17,9 +17,9 @@ function Carousel({ id, children, childrenCount, hasIndicators }) {
   };
 
   return (
-    <div className="container-fluid mb-5">
+    <div className="mb-5">
       {hasIndicators && (
-        <div className="container d-flex justify-content-center mx-0 mb-5">
+        <div className="container d-flex justify-content-center p-0 mb-5">
           <ol class="carousel-indicators-custom rounded-pill m-0">
             <li
               data-bs-target={`#${id}`}

@@ -5,7 +5,7 @@ import ButtonPrimary from "./ButtonPrimary";
 
 function ProductPage() {
   return (
-    <section className="section-products bg-grey-primary container-fluid d-flex flex-column">
+    <section className="section-products bg-grey-primary d-flex flex-column align-items-center">
       <h3 class="align-self-center fs-1 mb-4 text-primary text-capitalize">
         Best Selling Products
       </h3>
