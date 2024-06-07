@@ -4,7 +4,7 @@ import Card from "./Card";
 function SectionExperience() {
   return (
     <section className="section-experience gap-5">
-      <div className="w-100 position-relative">
+      <div className="section-experience__photo-box">
         <div className="grey-block grey-block--horizontal grey-block--left"></div>
         <img
           src={furniturePhoto}
@@ -14,7 +14,7 @@ function SectionExperience() {
         <div className="grey-block grey-block--vertical"></div>
       </div>
 
-      <div className="container">
+      <div className="section-experience__card-container">
         <Card
           titlePrimary={"we provide you the best experience"}
           titleSecondary={"experience"}
